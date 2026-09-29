@@ -1,0 +1,31 @@
+name: manos_seguras
+description: >
+  ManosSeguras — Digitalización Flutter del instrumento oficial de
+  auditoría de higiene de manos (RM N.° 255-2016/MINSA), alineada al
+  ODS 3. Proyecto integrador de SIS048 - Desarrollo de Software II
+  (UAC). Versión de referencia de la Sesión 15-16: navegación con
+  go_router, asincronía y consumo del API REST público de la OMS.
+publish_to: "none"
+version: 1.1.0+2
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Navegación declarativa (temática 1.4.1).
+  # ^17.5.0 es la última versión compatible con Flutter 3.38 – 3.43.
+  # Si su SDK es Flutter >= 3.44.0 / Dart >= 3.12.0, puede usar ^18.0.1.
+  go_router: ^17.5.0
+  # Cliente HTTP oficial (temática 1.4.2).
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

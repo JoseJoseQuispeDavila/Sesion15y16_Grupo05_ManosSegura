@@ -1,0 +1,17 @@
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # El proyecto del curso usa nombres de archivo, clases y miembros en
+    # español, por lo que se documenta explícitamente la convención.
+    - prefer_final_locals
+    - avoid_print
